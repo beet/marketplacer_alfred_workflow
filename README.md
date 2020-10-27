@@ -25,6 +25,7 @@ To customise the Alfred workflow environment variables, click the weird `[x]` ic
 * `mprm` + number - **m**arketplacer **p**ull **r**equest **m**arkdown
 * `mtes` + search phrase - **m**arketplacer **te**ttra **s**earch
 * `mtro` - **m**arketplacer **tr**ello **o**pen
+* `mprfsha` - **m**arketplacer **P**R **f**or **SHA**
 
 ## Github actions
 
@@ -99,6 +100,17 @@ Constructs a URL, copies it to the clipboard, and pastes it to the front most ap
 Constructs a Markdown link, copies it to the clipboard, and pastes it to the front most app.
 
 `mprm` + number - **m**arketplacer **p**ull **r**equest **m**arkdown
+
+#### Find the pull request for a given commit SHA
+
+This is a workflow I use almost daily following the principle of "search first, ask questions later". The commit history for me is most useful for tracing a piece of work back to the pull request which should describe the changes in enough detail to get a better understanding of them, ideally also linking to the Github issue and other documentation assets.
+
+Quite often, that's enough to answer the "why" if not _how_ something works.
+
+* Use `git blame` or `git log` to identify a recent commit in the piece of code in question
+* Copy the commit SHA
+* Enter the `mprfsha` keyword into Alfred, and paste in the SHA
+* It will search your selected repo for the SHA, and should reveal the pull request that it came in with
 
 ## Tettra actions
 

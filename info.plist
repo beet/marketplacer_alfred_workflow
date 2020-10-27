@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>04AE6BC7-837D-464F-9035-B778B996D0D1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F9A998A3-C5B8-4539-BF7F-397FDCCE90CC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0FDE7786-8C92-4522-81F0-97CA0583D597</key>
 		<array>
 			<dict>
@@ -133,6 +146,18 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>51A505BC-B455-4813-A74C-E8AAD28A7E1A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>4F37738F-8F8A-4338-80F7-7DDA7FFC2D27</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>23B72CAA-E118-4790-8D70-8EAFDD5A9716</key>
 		<array>
@@ -229,6 +254,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>47F08873-ADAC-4AFF-9996-F8FE73E4CF80</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>55D6045E-BDB9-4CCD-B17D-597356DE2A2D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>04AE6BC7-837D-464F-9035-B778B996D0D1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -863,6 +901,20 @@
 						<key>uid</key>
 						<string>DDF5CFDE-DF7C-416E-BFC6-7E9844510FAC</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>pr_for_sha</string>
+						<key>outputlabel</key>
+						<string>PR for SHA</string>
+						<key>uid</key>
+						<string>4F37738F-8F8A-4338-80F7-7DDA7FFC2D27</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string></string>
@@ -929,6 +981,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>mipp</string>
+				<key>subtext</key>
+				<string>Enter the issue number</string>
+				<key>text</key>
+				<string>Generate issue project page</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>585F2267-A082-42E6-93F5-620F4A6D171E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -978,27 +1051,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>31C6DC03-02A9-4D1F-9857-9C8FCD0BA003</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>mipp</string>
-				<key>subtext</key>
-				<string>Enter the issue number</string>
-				<key>text</key>
-				<string>Generate issue project page</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>585F2267-A082-42E6-93F5-620F4A6D171E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1066,25 +1118,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>[PR {var:issue_id}](https://github.com/marketplacer/{query}/pull/{var:issue_id})</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>FD12F483-FEFE-4625-A0DE-69EEC1DB3228</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -1131,25 +1164,7 @@
 				<key>autopaste</key>
 				<true/>
 				<key>clipboardtext</key>
-				<string># Issue {var:issue_id} - {var:issue_title}
-
-Tags: #issues
-
-## Resources
-
-* [Issue {var:issue_id}](https://github.com/marketplacer/{query}/issues/{var:issue_id})
-
-## Logbook
-
-* **{date}:** start
-
-## Next actions
-
-- [ ] Do something
-
-## Notes
-
-</string>
+				<string>[PR {var:issue_id}](https://github.com/marketplacer/{query}/pull/{var:issue_id})</string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
 				<key>transient</key>
@@ -1158,7 +1173,7 @@ Tags: #issues
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>A44905A9-70D9-4231-9088-621D9BE0087B</string>
+			<string>FD12F483-FEFE-4625-A0DE-69EEC1DB3228</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1208,6 +1223,43 @@ Tags: #issues
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string># Issue {var:issue_id} - {var:issue_title}
+
+Tags: #issues
+
+## Resources
+
+* [Issue {var:issue_id}](https://github.com/marketplacer/{query}/issues/{var:issue_id})
+
+## Logbook
+
+* **{date}:** start
+
+## Next actions
+
+- [ ] Do something
+
+## Notes
+
+</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A44905A9-70D9-4231-9088-621D9BE0087B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -1245,6 +1297,68 @@ Tags: #issues
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>0FDE7786-8C92-4522-81F0-97CA0583D597</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://github.com/marketplacer/{query}/pulls?utf8=✓&amp;q={var:sha}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>51A505BC-B455-4813-A74C-E8AAD28A7E1A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>mprfsha</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>PR for SHA</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>55D6045E-BDB9-4CCD-B17D-597356DE2A2D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>action</key>
+					<string>pr_for_sha</string>
+					<key>sha</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>04AE6BC7-837D-464F-9035-B778B996D0D1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1344,9 +1458,9 @@ Tags: #issues
 		<key>01E696F8-81D0-479A-9739-D1E92B36912F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>195</integer>
 			<key>ypos</key>
-			<integer>950</integer>
+			<integer>860</integer>
 		</dict>
 		<key>040C0D18-810F-45F7-82D0-08089C60E6B0</key>
 		<dict>
@@ -1355,12 +1469,19 @@ Tags: #issues
 			<key>ypos</key>
 			<integer>520</integer>
 		</dict>
+		<key>04AE6BC7-837D-464F-9035-B778B996D0D1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>195</integer>
+			<key>ypos</key>
+			<integer>1225</integer>
+		</dict>
 		<key>0FDE7786-8C92-4522-81F0-97CA0583D597</key>
 		<dict>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>195</integer>
 			<key>ypos</key>
-			<integer>1195</integer>
+			<integer>1105</integer>
 		</dict>
 		<key>159E5ACB-1472-4E65-8B57-D80267C3D36E</key>
 		<dict>
@@ -1411,6 +1532,13 @@ Tags: #issues
 			<key>ypos</key>
 			<integer>270</integer>
 		</dict>
+		<key>51A505BC-B455-4813-A74C-E8AAD28A7E1A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1045</integer>
+			<key>ypos</key>
+			<integer>1165</integer>
+		</dict>
 		<key>521BE7BD-FF72-4C3D-9164-1B65BDF81C06</key>
 		<dict>
 			<key>xpos</key>
@@ -1421,9 +1549,9 @@ Tags: #issues
 		<key>53EC3FDA-F578-447D-B9EB-E37A81EDC689</key>
 		<dict>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>655</integer>
 			<key>ypos</key>
-			<integer>1305</integer>
+			<integer>1320</integer>
 		</dict>
 		<key>544F56F2-0704-45CF-A1D3-695C7F8AFFD6</key>
 		<dict>
@@ -1439,12 +1567,19 @@ Tags: #issues
 			<key>ypos</key>
 			<integer>260</integer>
 		</dict>
+		<key>55D6045E-BDB9-4CCD-B17D-597356DE2A2D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>15</integer>
+			<key>ypos</key>
+			<integer>1195</integer>
+		</dict>
 		<key>585F2267-A082-42E6-93F5-620F4A6D171E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>765</integer>
+			<integer>640</integer>
 		</dict>
 		<key>7B8DB401-4160-44AA-8A0A-47130B6561C6</key>
 		<dict>
@@ -1463,23 +1598,23 @@ Tags: #issues
 		<key>8C701537-9E64-4350-BE22-D7E799944557</key>
 		<dict>
 			<key>xpos</key>
-			<integer>235</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>1305</integer>
+			<integer>1320</integer>
 		</dict>
 		<key>8EBA359F-F893-43C8-A4CD-9283E571C9F1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>920</integer>
+			<integer>830</integer>
 		</dict>
 		<key>90C5D83C-524D-4C6A-B282-A4690BDB6666</key>
 		<dict>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<integer>1305</integer>
+			<integer>1320</integer>
 		</dict>
 		<key>9AD4DD70-3BF4-46B4-A654-CE6B17FFB537</key>
 		<dict>
@@ -1491,9 +1626,9 @@ Tags: #issues
 		<key>9D4B3C75-6C81-4CA3-B688-3BB09D1DD70A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>195</integer>
 			<key>ypos</key>
-			<integer>1075</integer>
+			<integer>985</integer>
 		</dict>
 		<key>9D7FAB4E-CB0E-4EB4-BFB2-524299F0F295</key>
 		<dict>
@@ -1526,23 +1661,23 @@ Tags: #issues
 		<key>A6D2B9C5-035A-420E-B572-AD88B32B3C9C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>1165</integer>
+			<integer>1075</integer>
 		</dict>
 		<key>C1EEE5C2-7427-4C8E-ABF9-033770335379</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>1045</integer>
+			<integer>955</integer>
 		</dict>
 		<key>C986BEE9-1D97-4EF9-84E0-0717B5539A51</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>15</integer>
 			<key>ypos</key>
-			<integer>1305</integer>
+			<integer>1320</integer>
 		</dict>
 		<key>CC762F83-0AB4-413D-B66B-59E085846D24</key>
 		<dict>
