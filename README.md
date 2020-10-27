@@ -26,6 +26,7 @@ To customise the Alfred workflow environment variables, click the weird `[x]` ic
 * `mtes` + search phrase - **m**arketplacer **te**ttra **s**earch
 * `mtro` - **m**arketplacer **tr**ello **o**pen
 * `mprfsha` - **m**arketplacer **P**R **f**or **SHA**
+* `mcpvs` - **mcp** **v**ertical **s**earch
 
 ## Github actions
 
@@ -126,3 +127,12 @@ Will prompt for the board to open.
 
 `mtro` - **m**arketplacer **tr**ello **o**pen
 
+## MCP actions
+
+Marketplacer Control Panel
+
+### Search for verticals
+
+Enter a phrase to search MCP for verticals:
+
+`mcpvs` - **mcp** **v**ertical **s**earch

@@ -185,6 +185,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>36135C90-893A-4A78-A5A9-D5538A9BC85B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>83CDFFBA-EC86-4F4B-A8D5-6E6ABA733F23</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>47F08873-ADAC-4AFF-9996-F8FE73E4CF80</key>
 		<array>
 			<dict>
@@ -1365,6 +1378,25 @@ Tags: #issues
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://mcp.marketplacer.com/verticals?description={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>83CDFFBA-EC86-4F4B-A8D5-6E6ABA733F23</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -1428,6 +1460,27 @@ Tags: #issues
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>C986BEE9-1D97-4EF9-84E0-0717B5539A51</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>mcpvs</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Search MCP for a vertical</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>36135C90-893A-4A78-A5A9-D5538A9BC85B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1511,6 +1564,13 @@ Tags: #issues
 			<key>ypos</key>
 			<integer>765</integer>
 		</dict>
+		<key>36135C90-893A-4A78-A5A9-D5538A9BC85B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>770</integer>
+			<key>ypos</key>
+			<integer>1320</integer>
+		</dict>
 		<key>47F08873-ADAC-4AFF-9996-F8FE73E4CF80</key>
 		<dict>
 			<key>xpos</key>
@@ -1549,7 +1609,7 @@ Tags: #issues
 		<key>53EC3FDA-F578-447D-B9EB-E37A81EDC689</key>
 		<dict>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>620</integer>
 			<key>ypos</key>
 			<integer>1320</integer>
 		</dict>
@@ -1595,6 +1655,13 @@ Tags: #issues
 			<key>ypos</key>
 			<integer>390</integer>
 		</dict>
+		<key>83CDFFBA-EC86-4F4B-A8D5-6E6ABA733F23</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1000</integer>
+			<key>ypos</key>
+			<integer>1320</integer>
+		</dict>
 		<key>8C701537-9E64-4350-BE22-D7E799944557</key>
 		<dict>
 			<key>xpos</key>
@@ -1612,7 +1679,7 @@ Tags: #issues
 		<key>90C5D83C-524D-4C6A-B282-A4690BDB6666</key>
 		<dict>
 			<key>xpos</key>
-			<integer>435</integer>
+			<integer>400</integer>
 			<key>ypos</key>
 			<integer>1320</integer>
 		</dict>
