@@ -113,6 +113,39 @@ Quite often, that's enough to answer the "why" if not _how_ something works.
 * Enter the `mprfsha` keyword into Alfred, and paste in the SHA
 * It will search your selected repo for the SHA, and should reveal the pull request that it came in with
 
+### Construct conformant branch name
+
+`mnb` + branch name string _(with spaces, will be converted)_. 
+
+Requires the `git_name` workflow environment variable to be set.
+
+Automates the process of constructing a conformant branch name by prompting for a contentional commit type, and converting the input into snake case.
+
+![pic](docs/mnb_start.png)
+
+Pick a type:
+
+![pic](docs/mnb_type.png)
+
+Pastes `my.name/feat/my_awesome_branch` into the front most app.
+
+### Construct conformant commit message subject
+
+Automates the process of constructing a conformant commit message _subject_ by providing a select list for the commit type, and then further prompting for a commit scope when the type requires it.
+
+![pic](docs/mcm_start.png)
+
+Pick a type:
+
+![pic](docs/mnb_type.png)
+
+If the type requires a scope, pick from the list:
+
+![pic](docs/mcm_scope.png)
+
+
+Pastes `feat(seller): add an amazing new feature` into the front most app.
+
 ## Tettra actions
 
 ### Search Tettra
