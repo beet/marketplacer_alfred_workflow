@@ -15,6 +15,8 @@ To customise the Alfred workflow environment variables, click the weird `[x]` ic
 
 ## Actions summary
 
+Github actions:
+
 * `misssues` - **m**arketplacer **i**ssues
 * `mio` + number - **m**arketplacer **i**ssue **o**pen
 * `miu` + number - **m**arketplacer **i**ssue **u**rl
@@ -23,9 +25,21 @@ To customise the Alfred workflow environment variables, click the weird `[x]` ic
 * `mprv` + number - **m**arketplacer **p**ull **r**equest **v**iew
 * `mpru` + number - **m**arketplacer **p**ull **r**equest **u**rl
 * `mprm` + number - **m**arketplacer **p**ull **r**equest **m**arkdown
-* `mtes` + search phrase - **m**arketplacer **te**ttra **s**earch
-* `mtro` - **m**arketplacer **tr**ello **o**pen
 * `mprfsha` - **m**arketplacer **P**R **f**or **SHA**
+* `mnb` + branch name: construct conformant branch name
+* `mcm` + commit subject: construct conformant commit message subject
+* `mblame` + path/to/file.rb:123 - open git blame view on GitHub
+
+Tettra actions:
+
+* `mtes` + search phrase - **m**arketplacer **te**ttra **s**earch
+
+Trello actions:
+
+* `mtro` - **m**arketplacer **tr**ello **o**pen
+
+MCP actions:
+
 * `mcpvs` - **mcp** **v**ertical **s**earch
 
 ## Github actions
@@ -145,6 +159,14 @@ If the type requires a scope, pick from the list:
 
 
 Pastes `feat(seller): add an amazing new feature` into the front most app.
+
+### Open blame view in GitHub
+
+`mblame` + path/to/file.rb:123
+
+Open git blame view on GitHub, where a little blue icon provides "View blame prior to this change"
+
+Useful for code archaeology when the last commit on a line is from a linter to find the _previous_ change that may provide insights into its intent.
 
 ## Tettra actions
 
