@@ -42,6 +42,19 @@ MCP actions:
 
 * `mcpvs` - **mcp** **v**ertical **s**earch
 
+DataDog actions:
+
+* `mdog` - open ECS dashboard in DataDog
+
+Sidekiq actions:
+
+* `msid` - open M Connect Sidekiq dashboard
+
+Flipper actions:
+
+* `mflip` - open M Connect Flipper dashboard
+
+
 ## Github actions
 
 These actions may prompt for the project, or use the `default_project_id` workflow setting, and may prompt for the repository, or use the `default_repository` workflow setting.
@@ -68,7 +81,7 @@ Constructs a Markdown link, copies it to the clipboard, and pastes it to the fro
 
 `mim` + number - **m**arketplacer **i**ssue **m**arkdown
 
-#### Generate issue project page
+### Generate issue project page
 
 `mipp` + issue number + issue title - **m**arketplacer **i**ssue **p**roject **p**age
 
@@ -95,6 +108,29 @@ Tags: #issues
 
 
 ```
+
+#### Obsidian tasks integration
+
+The next actions section will include sections for due today and overdue:
+
+
+    ### Due today
+
+    ```tasks
+    not done
+    due today
+    path includes Issue {var:issue_id} - {var:issue_title}
+    ```
+
+    ### Overdue
+
+    ```tasks
+    not done
+    due before today
+    path includes Issue {var:issue_id} - {var:issue_title}
+    ```
+
+This requires the [obsidian-tasks](https://github.com/schemar/obsidian-tasks) plugin for [Obsidian](https://obsidian.md/)
 
 ### Pull requests
  
@@ -191,3 +227,34 @@ Marketplacer Control Panel
 Enter a phrase to search MCP for verticals:
 
 `mcpvs` - **mcp** **v**ertical **s**earch
+
+## Datadog actions
+
+![datadog](docs/datadog.png)
+
+### Open Datadog dashboard
+
+* Keyword: `mdog`, yo
+
+Opens the [ECS dashboard in Datadog](https://app.datadoghq.com/dashboard/wua-naq-h2w/christians-ecs-overview?tpl_var_application=integrations&from_ts=1643929744318&to_ts=1644534544318&live=true).
+
+## Sidekiq actions
+
+![sidekiq](docs/sidekiq.png)
+
+### Open Sidekiq dashboard
+
+
+* Keyword: `msid`
+
+Prompts to open either the M Connection production Sidekiq dashboard, or the `test-bart` Sidekiq dashboard.
+
+## Flipper actions
+
+![flipper](docs/flipper.png)
+
+### Open Flipper dashboard
+
+* Keyword: `mflip`
+
+Opens the M Connect Flipper feature flag dashboard.

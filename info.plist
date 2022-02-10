@@ -74,6 +74,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>0F731125-4B65-448E-95E5-2DA2079A7F82</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E00A2728-9982-4E72-81A3-53942223EFD3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0FDE7786-8C92-4522-81F0-97CA0583D597</key>
 		<array>
 			<dict>
@@ -263,6 +276,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>25EC9277-187B-44EC-988A-FD2C5919CCDE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>16AAB600-A455-4D34-96E5-1B3C639FF44D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2FBA1420-5F44-4D8E-A856-58312485468D</key>
 		<array>
 			<dict>
@@ -436,6 +462,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>35FB3A99-E8D8-4710-95C2-B94DBE331B4B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7A167C93-A195-468F-A94B-2188F91AAD40</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>25EC9277-187B-44EC-988A-FD2C5919CCDE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -669,6 +708,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>1C882B63-D244-4BB5-8C99-F810E6F15164</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DCC2E3DE-A9D3-4904-90F7-55DB312D6401</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6D67F3EC-8D8F-4724-974E-3A4CD6F59AE8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1556,6 +1608,22 @@ tags:
 
 - [ ] Do something
 
+### Due today
+
+```tasks
+not done
+due today
+path includes Issue {var:issue_id} - {var:issue_title}
+```
+
+### Overdue
+
+```tasks
+not done
+due before today
+path includes Issue {var:issue_id} - {var:issue_title}
+```
+
 ## Notes
 
 </string>
@@ -2288,6 +2356,153 @@ print input.split(' ').reject {|word| word == ''}.collect {|word| word.chomp.dow
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>mdog</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Open Marketplacer Datadog dashboard</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>DCC2E3DE-A9D3-4904-90F7-55DB312D6401</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://app.datadoghq.com/dashboard/wua-naq-h2w/christians-ecs-overview?from_ts=1623130937227&amp;live=true&amp;to_ts=1623735737227&amp;tpl_var_application=integrations</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>6D67F3EC-8D8F-4724-974E-3A4CD6F59AE8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"Production","arg":"integrations","subtitle":"Subdomain"},{"title":"Test","arg":"integrations-bart.test","subtitle":"test-bart subdomain"}]</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Select account profile</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>25EC9277-187B-44EC-988A-FD2C5919CCDE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://{query}.marketplacer.com/sidekiq/busy?poll=true</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>16AAB600-A455-4D34-96E5-1B3C639FF44D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>msid</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Open M Connect Sidekiq dashboard</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>7A167C93-A195-468F-A94B-2188F91AAD40</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://integrations.marketplacer.com/flipper/features</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E00A2728-9982-4E72-81A3-53942223EFD3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>mflip</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Flipper dashboard</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0F731125-4B65-448E-95E5-2DA2079A7F82</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -2328,6 +2543,13 @@ print input.split(' ').reject {|word| word == ''}.collect {|word| word.chomp.dow
 			<key>ypos</key>
 			<integer>1680</integer>
 		</dict>
+		<key>0F731125-4B65-448E-95E5-2DA2079A7F82</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>2205</integer>
+		</dict>
 		<key>0FDE7786-8C92-4522-81F0-97CA0583D597</key>
 		<dict>
 			<key>xpos</key>
@@ -2341,6 +2563,13 @@ print input.split(' ').reject {|word| word == ''}.collect {|word| word.chomp.dow
 			<integer>10</integer>
 			<key>ypos</key>
 			<integer>370</integer>
+		</dict>
+		<key>16AAB600-A455-4D34-96E5-1B3C639FF44D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>445</integer>
+			<key>ypos</key>
+			<integer>2080</integer>
 		</dict>
 		<key>1BF16CC1-DEEF-4C79-99F9-3F8269223F01</key>
 		<dict>
@@ -2383,6 +2612,13 @@ print input.split(' ').reject {|word| word == ''}.collect {|word| word.chomp.dow
 			<integer>1145</integer>
 			<key>ypos</key>
 			<integer>1825</integer>
+		</dict>
+		<key>25EC9277-187B-44EC-988A-FD2C5919CCDE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>2080</integer>
 		</dict>
 		<key>2FBA1420-5F44-4D8E-A856-58312485468D</key>
 		<dict>
@@ -2496,12 +2732,26 @@ print input.split(' ').reject {|word| word == ''}.collect {|word| word.chomp.dow
 			<key>ypos</key>
 			<integer>1680</integer>
 		</dict>
+		<key>6D67F3EC-8D8F-4724-974E-3A4CD6F59AE8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>1960</integer>
+		</dict>
 		<key>77AFB392-0BA6-4031-849E-974E12040B99</key>
 		<dict>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
 			<integer>1825</integer>
+		</dict>
+		<key>7A167C93-A195-468F-A94B-2188F91AAD40</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>2080</integer>
 		</dict>
 		<key>7B8DB401-4160-44AA-8A0A-47130B6561C6</key>
 		<dict>
@@ -2671,6 +2921,20 @@ print input.split(' ').reject {|word| word == ''}.collect {|word| word.chomp.dow
 			<key>ypos</key>
 			<integer>660</integer>
 		</dict>
+		<key>DCC2E3DE-A9D3-4904-90F7-55DB312D6401</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>1960</integer>
+		</dict>
+		<key>E00A2728-9982-4E72-81A3-53942223EFD3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>2205</integer>
+		</dict>
 		<key>E48AFC74-7777-45CF-B95E-CCA042C449B1</key>
 		<dict>
 			<key>xpos</key>
@@ -2738,9 +3002,9 @@ print input.split(' ').reject {|word| word == ''}.collect {|word| word.chomp.dow
 	<key>variables</key>
 	<dict>
 		<key>default_project_id</key>
-		<string>18</string>
+		<string>4</string>
 		<key>default_repository</key>
-		<string>marketplacer</string>
+		<string></string>
 		<key>git_name</key>
 		<string>mark.beattie</string>
 	</dict>
@@ -2751,7 +3015,7 @@ print input.split(' ').reject {|word| word == ''}.collect {|word| word.chomp.dow
 		<string>default_repository</string>
 	</array>
 	<key>version</key>
-	<string>1.3.0</string>
+	<string>1.4.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/beet/marketplacer_alfred_workflow</string>
 </dict>
